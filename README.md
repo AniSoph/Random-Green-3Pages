@@ -20,6 +20,18 @@ With the first one I'm not sure (Anastasiia said it probably wouldn't work in th
 I think I would put both versions in our project files (one commented out) that he sees that we put some thought into it and tried different things. :) 
 
 
-- And then we also have 2 possible ways for redirecting.
+- And then we also have 2 possible ways for redirection.
 
+  1. The first one is directing everyone to the same page but changing what is displayed on the page based on the Treatment    group.  
+  --> The randomization would be in the delivery file.
+  
+  2. The second option would be to create 3 different pages and directing everyone to a different page based on the treatment group. 
+  --> The ramdomization takes place while clicking on the button of the chosen product (productChoice-file)
+  
+These 2 options are basically the same. Creatng 3 pages requires a lot more code, and might not be as "pretty" as the first option. BUT with the second option (3 pages) we could impliment the treatment using html and not just with pictures. 
 
+Since Anastasiia is pretty into HTML (:P) I would go for the second 3 page option, but also leave the other option in the files commented out.
+
+So now we have to decide for 1 option in both cases. :P 
+
+And HAPPY NEW YEAR btw. ;) 
