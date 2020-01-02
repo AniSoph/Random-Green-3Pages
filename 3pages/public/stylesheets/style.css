@@ -1,0 +1,152 @@
+/*Define color palette*/
+/*Define color palette*/
+body {
+  background-color: transparent;
+  padding: 50px;
+  font-family: "Open Sans";
+  font-size: large;
+  color: #004475;
+  text-align: center; }
+
+h2 {
+  font-family: "Open Sans";
+  font-size: x-large; }
+
+.progress {
+  display: inherit; }
+
+/*INDEX/INSTRUCTION*/
+.container-fluid {
+  position: sticky;
+  line-height: 1.8;
+  margin: 1px; }
+
+h1 {
+  font-family: "Open Sans";
+  font-size: xxx-large; }
+
+a {
+  font-family: "Indie Flower";
+  font-size: x-large;
+  color: #004475; }
+
+.text-muted {
+  font-family: "Open Sans";
+  font-size: medium;
+  padding: inherit; }
+
+.btn-complete1 {
+  font-family: "Open Sans";
+  position: relative;
+  height: 50px;
+  width: 50%;
+  background: #e2e6e9;
+  margin: 20px;
+  border: 0px;
+  color: #004475;
+  box-shadow: 0 0 1px #ccc;
+  -webkit-transition-duration: 0.7s;
+  -webkit-transition-timing-function: linear;
+  box-shadow: 0px 0 0 #004475 inset; }
+
+.btn-complete1:hover {
+  box-shadow: 100px 0 0 100px #004475 inset; }
+
+/*PRODUCT CATEGORY CHOICE*/
+.container-cat {
+  padding: 10px 10px 10px 10px;
+  position: relative; }
+
+.row-cat {
+  padding-bottom: 10px;
+  position: inherit;
+  display: inline-flex; }
+
+.container-cat img {
+  width: 250px;
+  height: 250px;
+  position: relative; }
+
+.container-cat .choose-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #004475;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  opacity: 0.6;
+  transition: 0.2s; }
+
+.container-cat .choose-button:hover {
+  background-color: #ffb910;
+  opacity: 1; }
+
+/*PRODUCT CHOICE*/
+.column-prod {
+  float: left;
+  width: 20%;
+  margin-bottom: 16px;
+  padding: 0 8px; }
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%; } }
+
+.card-prod {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
+
+.container-prod {
+  padding: 0 16px;
+  position: relative; }
+  .container-prod::after {
+    content: "";
+    clear: both;
+    display: table; }
+
+.row-prod::after {
+  content: "";
+  clear: both;
+  display: table; }
+
+.title-prod {
+  color: grey; }
+
+.container-prod img {
+  width: 200px;
+  height: 200px;
+  position: relative; }
+
+/*DELIVERY CHOICE*/
+.container-del {
+  padding: 20px 10px 0px 10px;
+  position: relative; }
+
+.container-del img {
+  width: 20%;
+  height: 20%;
+  position: relative; }
+
+/*FEEDBACK*/
+.container-feedback {
+  display: inherit;
+  position: relative; }
+
+/*HEADER*/
+.navbar-brand {
+  color: #004475;
+  font-family: "Indie Flower";
+  font-size: 36px; }
+
+/*FOOTER*/
+.text-footer {
+  font-family: "Indie Flower";
+  font-size: 13px;
+  padding: inherit; }
+
+/*# sourceMappingURL=style.css.map */

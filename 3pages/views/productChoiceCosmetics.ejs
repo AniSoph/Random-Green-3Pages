@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+<head>
+  <title>SELECT PRODUCT</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/stylesheets/style.css"/>
+  </head>
+  <body style="margin: auto;">
+    <header><% include ./header %></header>
+    <br>
+    <h2>Choose your procuct</h2>
+    <br>
+    <p>
+      Please choose your favourite product of your chosen category.
+      <br>
+      <br>
+      Again, don't worry, this is a fictious szenario, so you're not purchasing some of the products.
+      <br>
+      Nonetheless, we would like you to choose something that you're most likely to buy.
+    </p>
+      <br>
+      <br>
+
+
+
+                <script>
+
+      /* We have 3 different delivery pages, each one being different according to the treatment.
+      (1page: without treatment; 2page: social influence treatment; 3page:informational influence treatment)
+      */
+      var randomNr = Math.random()
+
+      /* math.random asigns a random number to the var randomNr between 0 and 1 */
+
+      function directToTreatments() {
+                   if (randomNr <= 0.33) {
+                     window.location.href = 'http://localhost:8080/delivery';
+                     // alert("No treatment")
+                   // onclick="location.href ='http://localhost:8080/delivery'";
+                     // document.getElementById("OtherpplChoice").src = "https://www.sachaheck.net/blog/wp-content/uploads/2010/03/Grafik_Kuchenstueck.jpg"
+                   } else if (randomNr > 0.66) {
+                       window.location.href = 'http://localhost:8080/delivery/delivery_2';
+                       // alert("treatment 2 ")
+                    // onclick="location.href ='http://localhost:8080/delivery/delivery_2'";
+                    // document.getElementById("OtherpplChoice").src = "https://i.imgur.com/YKEDNMu.png"
+                   } else {
+                       window.location.href = 'http://localhost:8080/delivery/delivery_1';
+                     // alert("treatment 1 ")
+                  // onclick="location.href ='http://localhost:8080/delivery/delivery_1'";
+                  // document.getElementById("OtherpplChoice").src = "https://i.imgur.com/YKEDNMu.png"
+                   }; }
+              </script>
+
+      /* function directToTreatments redirects to differet pages based on the if-condition */
+
+
+      <!-- Add 6 images in cards that contain a text and an additional button each-->
+   <div class="row-prod">
+     <div class="column-prod">
+       <div class="card-prod">
+         <div class="container-prod">
+           <img class="img" id="Soap" src="images/Soap.jpg" alt="Soap">
+           <div class="container-prod">
+         <h2>Soap</h2>
+         <p class="title-prod">Cosmetics Prod. Inc.</p>
+         <p>2,99€</p>
+         <button class="button" onclick="directToTreatments()">Choose</button>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="column-prod">
+      <div class="card-prod">
+        <div class="container-prod">
+         <img class="img" id="Soap_eco" src="images/Soap_eco.jpg" alt="Soap_eco">
+         <div class="container-prod">
+         <h2>Soap</h2>
+         <p class="title-prod">Environmental Prod. Inc.</p>
+         <p>2,99€</p>
+         <button class="button" onclick="directToTreatments()">Choose</button>
+       </div>
+     </div>
+   </div>
+   </div>
+
+   <div class="column-prod">
+     <div class="card-prod">
+       <div class="container-prod">
+         <img class="img" id="Shampoo" src="images/Shampoo.jpg" alt="Shampoo">
+         <div class="container-prod">
+         <h2>Shampoo</h2>
+         <p class="title-prod">Cosmetics Prod. Inc.</p>
+         <p>4,99€</p>
+         <button class="button" onclick="directToTreatments()">Choose</button>
+       </div>
+     </div>
+   </div>
+   </div>
+ </div>
+
+ <div class="row-prod">
+   <div class="column-prod">
+     <div class="card-prod">
+       <div class="container-prod">
+         <img class="img" id="Shampoo_eco" src="images/Shampoo_eco.jpg" alt="Shampoo_eco">
+         <div class="container-prod">
+         <h2>Shampoo</h2>
+         <p class="title-prod">Environmental Prod. Inc.</p>
+         <p>4,99€</p>
+         <button class="button" onclick="directToTreatments()">Choose</button>
+       </div>
+     </div>
+   </div>
+   </div>
+
+   <div class="column-prod">
+     <div class="card-prod">
+       <div class="container-prod">
+         <img class="img" id="Blackroll" src="images/Blackroll.jpg" alt="Blackroll">
+         <div class="container-prod">
+         <h2>Blackroll</h2>
+         <p class="title-prod">Cosmetics Prod. Inc.</p>
+         <p>17,99€</p>
+         <button class="button" onclick="directToTreatments()">Choose</button>
+       </div>
+     </div>
+   </div>
+   </div>
+
+   <div class="column-prod">
+     <div class="card-prod">
+       <div class="container-prod">
+         <img class="img" id="Blackroll_eco" src="images/Blackroll_eco.jpg" alt="Blackroll_eco">
+         <div class="container-prod">
+         <h2>Blackroll</h2>
+         <p class="title-prod">Environmental Prod. Inc.</p>
+         <p>17,99€</p>
+         <button class="button" onclick="directToTreatments()">Choose</button>
+       </div>
+     </div>
+   </div>
+ </div>
+</div>
+ <footer><% include ./footer%></footer>
+</body>
+</html>
